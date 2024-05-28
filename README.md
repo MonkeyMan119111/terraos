@@ -10,6 +10,7 @@ terraOS utilizes a bug in chromebook RMA shims, which are bootable recovery imag
 You'll need to create a partition with the type `chromeOS rootfs` (`3cb8e202-3b7e-47dd-8a3c-7ff2a13cfcec`) and bootstrap your distro in the root of an ext4 filesystem on that partition. Place any squashfs files in the root of the first partition.
 
 ## How do I use it?
+Make sure you use an Arch Linux system as other distros are not supported due to the lack of scripts for bootstrapping Arch Linux.
 1. Clone this repo.
 2. Create a build directory.
 3. Run `bash ../scripts/build_stage1.sh <defconfig>`
